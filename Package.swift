@@ -5,11 +5,14 @@ import PackageDescription
 
 let package = Package(
     name: "SPMPackageBWrapper",
+    platforms: [
+      .iOS(.v14), .tvOS(.v14)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "SPMPackageBWrapper",
-            targets: ["SPMPackageBWrapper"]),
+            targets: ["SPMPackageB"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,11 +26,5 @@ let package = Package(
             name: "SPMPackageB",
             url: "https://github.com/yehe01/SPMPackageB/files/8957526/SPMPackageB.xcframework.zip",
             checksum: "f892d2868b9ea5731c6bc075f175dd0e54e72741f0e1ff5511213337a43c6de6"),
-        .target(
-            name: "SPMPackageBWrapper",
-            dependencies: []),
-        .testTarget(
-            name: "SPMPackageBWrapperTests",
-            dependencies: ["SPMPackageBWrapper"]),
     ]
 )
