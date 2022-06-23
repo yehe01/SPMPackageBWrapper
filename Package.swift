@@ -24,7 +24,7 @@ let package = Package(
         
         .binaryTarget(
             name: "SPMPackageB",
-            url: "https://github.com/yehe01/SPMPackageB/files/8957904/SPMPackageB.xcframework.zip",
-            checksum: "03b5630ecb0c3906e2d2cfb606a61779f338da25d55c14c37579bc3ad892c086"),
+            url: "https://github.com/yehe01/SPMPackageB/files/8963693/SPMPackageB.xcframework.zip",
+            checksum: "28782c48f6c73de20541942b5c8d9026eebe7a756bdfc17ca25561cff123b778"),
     ]
 )
